@@ -18,7 +18,7 @@ services:
       container_name: pgadmin
       image: dpage/pgadmin4
       environment:
-        PGADMIN_DEFAULT_EMAIL: ${PGADMIN_DEFAULT_EMAIL:-pgadmin4}
+        PGADMIN_DEFAULT_EMAIL: ${PGADMIN_DEFAULT_EMAIL:-pgadmin4@email.com}
         PGADMIN_DEFAULT_PASSWORD: ${PGADMIN_DEFAULT_PASSWORD:-admin4}
         PGADMIN_CONFIG_SERVER_MODE: 'False'
       volumes:
