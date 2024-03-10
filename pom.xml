@@ -10,7 +10,8 @@
   <name>microservices-learning</name>
   <url>https://kaue.cat</url>
   <modules>
-    <module>customer</module>
+    <module>customer-ms</module>
+    <module>fraud-ms</module>
   </modules>
 
   <properties>
