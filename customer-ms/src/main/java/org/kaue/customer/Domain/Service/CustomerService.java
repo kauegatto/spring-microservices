@@ -1,6 +1,6 @@
 package org.kaue.customer.Domain.Service;
 
-import org.kaue.customer.Domain.CustomerRepository.ICustomerRepository;
+import org.kaue.customer.Domain.Repository.ICustomerRepository;
 import org.kaue.customer.Domain.Dto.CustomerRequest;
 import org.kaue.customer.Domain.Model.Customer;
 import org.springframework.stereotype.Service;
