@@ -1,2 +1,18 @@
 server:
   port: 8081
+
+spring:
+  application:
+    name: fraud-ms
+  datasource:
+    username: "admin"
+    password: "admin_password"
+    url: jdbc:postgresql://localhost:5432/fraus # in a production scenario, would be reasonable to be a different db
+  jpa:
+    properties:
+      hibernate:
+        dialect: "org.hibernate.dialect.PostgreSQLDialect"
+        format_sql: 'true'
+    hibernate:
+      ddl-auto: update
+    show-sql: "true"
