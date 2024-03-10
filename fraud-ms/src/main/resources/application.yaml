@@ -7,7 +7,7 @@ spring:
   datasource:
     username: "admin"
     password: "admin_password"
-    url: jdbc:postgresql://localhost:5432/fraus # in a production scenario, would be reasonable to be a different db
+    url: jdbc:postgresql://localhost:5432/fraud # in a production scenario, would be reasonable to be a different db
   jpa:
     properties:
       hibernate:
