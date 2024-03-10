@@ -1,0 +1,13 @@
+### Get All customers
+GET {{customer-host}}/api/v1/customers
+
+### Register customer
+POST {{customer-host}}/api/v1/customers
+Content-Type: application/json
+
+{
+  "firstName": "kaue",
+  "lastName": "gatto",
+  "email": "{{$random.email}}"
+}
+###
