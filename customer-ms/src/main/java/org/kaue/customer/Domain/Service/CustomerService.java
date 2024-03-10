@@ -15,7 +15,7 @@ public record CustomerService (ICustomerRepository repository){
             .lastName(customerRequest.lastName())
             .build();
     // todo validations
-    repository.register(customer);
+    repository.save(customer);
 
   }
 }
