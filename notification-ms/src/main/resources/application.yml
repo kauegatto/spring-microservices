@@ -1,13 +1,13 @@
 server:
-  port: 8081
+  port: 8090
 
 spring:
   application:
-    name: fraud-ms
+    name: notification-ms
   datasource:
     username: "admin"
     password: "admin_password"
-    url: jdbc:postgresql://localhost:5432/fraud # in a production scenario, would be reasonable to be a different db
+    url: jdbc:postgresql://localhost:5432/notification
   jpa:
     properties:
       hibernate:
@@ -16,6 +16,7 @@ spring:
     hibernate:
       ddl-auto: update
     show-sql: "true"
+
 eureka:
   client:
     service-url:

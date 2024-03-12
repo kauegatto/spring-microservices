@@ -13,6 +13,7 @@
     <module>customer-ms</module>
     <module>fraud-ms</module>
     <module>eureka-service-discovery</module>
+      <module>notification-ms</module>
   </modules>
 
   <properties>

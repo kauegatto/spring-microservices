@@ -8,6 +8,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.io.UnsupportedEncodingException;
+
 @RestController
 @RequestMapping("api/v1/customers")
 @Slf4j
@@ -16,7 +18,7 @@ public record CustomerController (CustomerService service) {
   @PostMapping
   public void register(@RequestBody CustomerRequest customerRequest){
     log.info("Request to register a new customer: {}", customerRequest);
-    service.registerCustomer(customerRequest);
+      service.registerCustomer(customerRequest);
   }
 
 }

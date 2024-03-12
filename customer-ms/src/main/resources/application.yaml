@@ -19,4 +19,15 @@ spring:
 
 client:
   url:
-    fraudURL: http://localhost:8081
+    fraudURL: http://fraud-ms
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+  instance:
+    instanceId: ${spring.application.name}:${vcap.application.instance_id:${spring.application.instance_id:${random.value}}}
+
+
+# We're overriding instance Id since my ${spring.cloud.client.hostname} contains ê
+# See https://cloud.spring.io/spring-cloud-static/Edgware.SR6/multi/multi__service_discovery_eureka_clients.html#_changing_the_eureka_instance_id
