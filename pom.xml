@@ -12,9 +12,11 @@
   <modules>
     <module>customer-ms</module>
     <module>fraud-ms</module>
+    <module>eureka-service-discovery</module>
   </modules>
 
   <properties>
+    <spring-cloud.version>2023.0.0</spring-cloud.version>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
       <spring.boot.dependencies.version>3.2.3</spring.boot.dependencies.version>
     <maven.compiler.source>17</maven.compiler.source>
@@ -27,6 +29,13 @@
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-dependencies</artifactId>
         <version>${spring.boot.dependencies.version}</version>
+        <type>pom</type>
+        <scope>import</scope>
+      </dependency>
+      <dependency>
+        <groupId>org.springframework.cloud</groupId>
+        <artifactId>spring-cloud-dependencies</artifactId>
+        <version>${spring-cloud.version}</version>
         <type>pom</type>
         <scope>import</scope>
       </dependency>
